@@ -11,3 +11,15 @@ export const getAllProducts = (sortBy) => {
       console.log(err);
     });
 };
+
+export const getAllCategories = () => {
+  return fetch(`${API}/category`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};

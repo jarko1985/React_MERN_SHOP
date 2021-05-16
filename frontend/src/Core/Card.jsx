@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ShowImage from "./ShowImage";
+import { FaCartPlus } from "react-icons/fa";
 
 const Card = ({ product }) => {
   return (
-    <div className="col-4 mb-3">
+    <div className="col-3 mb-3">
       <div className="card">
         <div style={{ textAlign: "center" }} className="card-header">
           {product.name}
@@ -20,7 +21,8 @@ const Card = ({ product }) => {
               </button>
             </Link>
             <button className="btn btn-outline-success mt-2 mb-2">
-              Add to Cart
+              Add to Cart &nbsp;
+              <FaCartPlus size={25} />
             </button>
           </div>
         </div>
